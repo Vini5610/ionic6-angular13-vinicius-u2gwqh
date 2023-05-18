@@ -1,0 +1,63 @@
+/* Add application styles & imports to this file! */
+
+
+.body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.body{
+  display: flex;
+  flex-direction: column;
+  background-color: #ffc760;
+  background-image: linear-gradient(#ffc760,rgb(255, 123, 0));
+}
+
+
+.imgs:hover{
+  filter: drop-shadow(1px 1px 1px black);
+  transition: .2s;
+}
+
+
+.name{
+  text-align: center;
+  padding: 10%;
+}
+
+*{
+  margin: 0;padding: 0;
+}
+
+.carrosel{
+  width: 597px;
+  height: 270px;
+  outline: 3px solid rgb(2, 2, 5);
+  overflow: hidden; 
+  margin: 50px auto;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.7);
+}
+
+.carrosel ul{
+  display: flex;
+  list-style: none;
+  width: 1200px;
+  height: 250px;
+}
+
+.carrosel li{
+  position:relative;
+  animation: slide 15s infinite ease-in-out;
+}
+
+@keyframes slide{
+  0%{left: 0px}
+  20%{left: 0px;}
+
+  30%{left: -738px;}
+  50%{left: -768px;}
+
+  80%{left: -1600px}
+  90%{left: -1770px;}
+
+  100%{left:0px;}
+}
